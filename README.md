@@ -40,7 +40,7 @@ Before you can run this script, you need to have the following:
 1. Run the script:
 
     ```bash
-    python script_name.py
+    python main.py
     ```
 
 2. When prompted, enter the date for which you want to retrieve the Billboard Hot 100 chart in the format `YYYY-MM-DD`.
@@ -50,6 +50,8 @@ Before you can run this script, you need to have the following:
 4. The script will create a private playlist on your Spotify account with the top 100 songs from the specified date.
 
 ## Code Explanation
+
+The main logic is in [`main.py`](main.py). Here's a breakdown of how it works:
 
 1. **Importing Libraries**: The script imports the necessary libraries for web scraping, HTTP requests, and Spotify API interactions.
    
@@ -62,7 +64,7 @@ Before you can run this script, you need to have the following:
     from dotenv import load_dotenv
     ```
 
-2. **Load Environment Variables**: It loads the Spotify API credentials from the `.env` file.
+2. **Load Environment Variables**: It loads the Spotify API credentials from the `.env` file (see [Installation](#installation) for setup).
 
     ```python
     load_dotenv()
@@ -128,5 +130,7 @@ Before you can run this script, you need to have the following:
 
 
 ---
+
+## Contributing
 
 Feel free to contribute to this project by submitting issues or pull requests. Happy playlist creating!
